@@ -1,0 +1,162 @@
+div#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 120px; 
+  background-color: deeppink;
+  width: 100%;
+  clear: both;
+  z-index: 1;
+}
+
+div#navbar {
+  width: 100%;
+  clear: both;
+}
+
+div#navbar ul, div#v-navbar ul {
+  list-style-type: none;
+}
+
+div#navbar, p.slogan {
+  margin-left: 15%;
+}
+
+div#navbar ul li{
+  background-color: darkblue;
+  margin-bottom: .3em;
+  text-align: center; /* 수평 배열의 경우 텍스트 중앙 배치가 선호됨 */
+  display: inline;
+  width: 10%;
+  height: 30px;
+  float: left;
+  margin-right: .5em;
+  min-width: 100px;
+}
+
+div#v-navbar ul li {
+  background-color: deepskyblue;
+  margin-bottom: .3em;
+  width: 60%;
+  height: 30px;
+  float: left;
+  margin-right: .5em;
+  margin-bottom: 2em;
+  min-width: 80px;
+}
+
+div#navbar ul li a {
+  display: block; /* li의 폭을 모두 차지함 */
+  height: 100%; /* li의 높이를 모두 차지함 */
+  padding-top: .2em;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  color: ivory;
+  background-color: navy;
+}
+
+div#v-navbar ul li a {
+  display: block; /* li의 폭을 모두 차지함 */
+  height: 100%; /* li의 높이를 모두 차지함 */
+  padding-top: .2em;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  color: ivory;
+  background-color: deepskyblue;
+}
+
+p.no-wrap {
+  clear: both;
+}
+
+p.slogan {
+  font-size: 1.85em;
+  font-weight: bold;
+  padding-left: 33px;
+  color: azure;
+}
+
+div#invi-header {
+  height: 120px;
+  width: 100%;
+  visibility: hidden;
+}
+
+div#main {
+  position: static;
+  top: 0;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/Ilchulbong.jpg");  
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position: center top;
+  max-width: 1920px;
+  width: 98%;
+  height: 1251px;
+  overflow-y: scroll;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.container {
+  /*display: inline-flex;*/
+}
+
+.container > div {
+  flex: auto;
+}
+
+div#main-cont {
+  float: left;
+  width: 70%;
+}
+
+div#v-container {
+  float: right;
+  width: 20%;
+}
+
+div#main div#v-container div#v-navbar {
+  position: fixed;
+}
+
+div#v-navbar {
+  margin-top: 5em;
+}
+
+div#v-navbar ul li a {
+  color: lightgoldenrodyellow;
+  padding-left: 3em;
+}
+
+div#main h1 {
+  text-align: center;
+  color: white;
+}
+div#main p {
+  color: white;
+  padding: 10px 100px;
+  font-size: 1.3em;
+  line-height: 1.8em;
+}
+
+div#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  background-color: aquamarine;
+  width: 100%;
+}
+
+div#invi-footer {
+  height: 80px;
+  width: 100%;
+  visibility: hidden;  
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
